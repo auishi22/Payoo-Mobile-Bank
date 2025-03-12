@@ -13,5 +13,58 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="h-screen flex justify-center items-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <div class="hero bg-base-200 min-h-screen">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg"
+                        >Mobile Number</span
+                      >
+                    </label>
+                    <input
+                    id="phone-number"
+                      type="text"
+                      placeholder="Enter Your Number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg"
+                        >4-Digit Pin</span
+                      >
+                    </label>
+                    <input
+                    id="digit-number"
+                      type="password"
+                      placeholder="Enter 4-Digit Pin"
+                      class="input input-bordered"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-login"
+                      class="btn btn-primary rounded-full font-bold text-lg"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
 </html>
