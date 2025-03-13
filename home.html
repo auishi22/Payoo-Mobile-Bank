@@ -29,9 +29,10 @@
             </div>
             <div class="divider"></div>
             <!-- User action  button -->
-            <div class="space-x-8">
-              <button id="display-add-money" class="btn btn-lg">Add Money</button>
-              <button id="display-cashout" class="btn btn-lg">Cash Out</button>
+            <div class="space-x-2">
+              <button id="display-add-money" class="btn text-base font-bold">Add Money</button>
+              <button id="display-cashout" class="btn text-base font-bold">Cash Out</button>
+              <button id="display-transaction" class="btn text-base font-bold">Transaction</button>
             </div>
             <div class="divider"></div>
             <!-- AddMoney start -->
@@ -40,7 +41,7 @@
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text font-bold text-lg">Add Amout</span>
+                      <span class="label-text font-bold text-lg">Add Amount</span>
                     </label>
                     <input
                       id="add-money"
@@ -124,11 +125,21 @@
             </div>
 
               <!-- CashOut end -->
+
+              <!-- transaction start -->
+              <div id="trans-container" class="hidden space-y-3">
+                <h1 class="text-3xl font-bold">Transaction</h1>
+              </div>
+              <!-- transaction end -->
           </div>
         </div>
       </div>
     </main>
-    <script src="./js/home.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashout.js"></script>
     <script src="./js/features.js"></script>
+    <!-- <script src="./js/home.js"></script>-->
+    
   </body>
 </html>
