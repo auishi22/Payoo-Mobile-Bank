@@ -22,7 +22,7 @@
             <div>
               <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value">8400</div>
+                  <div id="main-balance" class="stat-value">8400</div>
                   <div class="stat-desc">Available Balance</div>
                 </div>
               </div>
@@ -34,48 +34,96 @@
               <button class="btn btn-lg">Cash Out</button>
             </div>
             <div class="divider"></div>
-            <div class="hero bg-base-200 min-h-screen">
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                  <form class="card-body">
-                    <div class="form-control">
-                      <label class="label">
-                        <span class="label-text font-bold text-lg"
-                          >Amout</span
-                        >
-                      </label>
-                      <input
+            <!-- AddMoney start -->
+            <div class="hidden hero bg-base-200">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg">Add Amout</span>
+                    </label>
+                    <input
                       id="add-money"
-                        type="text"
-                        placeholder="Enter Your Amount"
-                        class="input input-bordered"
-                        required
-                      />
-                    </div>
-                    <div class="form-control">
-                      <label class="label">
-                        <span class="label-text font-bold text-lg"
-                          >4-Digit Pin</span
-                        >
-                      </label>
-                      <input
-                      id="add-money-pin"
-                        type="password"
-                        placeholder="Enter 4-Digit Pin"
-                        class="input input-bordered"
-                        required
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="form-control mt-6">
-                      <button id="btn-add-money"
-                        class="btn btn-primary rounded-full font-bold text-lg"
+                      type="text"
+                      placeholder="Enter Your Amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg"
+                        >4-Digit Pin</span
                       >
-                        Add Money
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                    </label>
+                    <input
+                      id="add-money-pin"
+                      type="password"
+                      placeholder="Enter 4-Digit Pin"
+                      class="input input-bordered"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button
+                      id="btn-add-money"
+                      class="btn btn-primary rounded-full font-bold text-lg"
+                    >
+                      Add Money
+                    </button>
+                  </div>
+                </form>
               </div>
+            </div>
+            <!-- Addmoney end -->
+
+
+             <!-- Cashout start -->
+
+             <div class="hero bg-base-200">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg">Cashout Amout</span>
+                    </label>
+                    <input
+                      id="cashout-money"
+                      type="text"
+                      placeholder="Enter Your Amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold text-lg"
+                        >4-Digit Pin</span
+                      >
+                    </label>
+                    <input
+                      id="cashout-pin"
+                      type="password"
+                      placeholder="Enter 4-Digit Pin"
+                      class="input input-bordered"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button
+                      id="btn-cashout"
+                      class="btn btn-primary rounded-full font-bold text-lg"
+                    >
+                      Cashout Money
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+              <!-- CashOut end -->
           </div>
         </div>
       </div>
